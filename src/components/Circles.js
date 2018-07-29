@@ -15,8 +15,8 @@ class Circles extends React.Component {
     };
   }
 
-  shouldComponentUpdate(){
-    
+  shouldComponentUpdate(nextProps, nextState){
+    return (this.props.color !== nextProps.color);
   }
 
   handleClick = () => {
